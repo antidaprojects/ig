@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Instageo &mdash; Antida software</title>
-	<link rel="stylesheet" href="/static/app.css">
+	<link rel="stylesheet" href="static/app.css">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -39,22 +39,22 @@
 			<div class="col-md-3">
 				<h2>Paris</h2>
 				<p>Realtime broadcasting from Eiffel Tower, Paris.</p>
-				<p><a class="btn btn-primary btn-sm" href="/watch/#loc=eiffel tower" role="button">Go to Paris &raquo;</a></p>
+				<p><a class="btn btn-primary btn-sm" href="/ig/watch/#loc=eiffel tower" role="button">Go to Paris &raquo;</a></p>
 			</div>
 			<div class="col-md-3">
 				<h2>Moscow</h2>
 				<p>Fresh photos from Gorky Park, Moscow.</p>
-				<p><a class="btn btn-primary btn-sm" href="/watch/#loc=gorky park moscow" role="button">Go to Moscow &raquo;</a></p>
+				<p><a class="btn btn-primary btn-sm" href="/ig/watch/#loc=gorky park moscow" role="button">Go to Moscow &raquo;</a></p>
 			</div>
 			<div class="col-md-3">
 				<h2>London</h2>
 				<p>See the looks from Winbledon, London.</p>
-				<p><a class="btn btn-primary btn-sm" href="/watch/#loc=winbledon" role="button">Go to London &raquo;</a></p>
+				<p><a class="btn btn-primary btn-sm" href="/ig/watch/#loc=winbledon" role="button">Go to London &raquo;</a></p>
 			</div>
 			<div class="col-md-3">
 				<h2>New York</h2>
 				<p>Do you like Manhattan? See photos from New York.</p>
-				<p><a class="btn btn-primary btn-sm" href="/watch/#loc=manhattan" role="button">Go to New York &raquo;</a></p>
+				<p><a class="btn btn-primary btn-sm" href="/ig/watch/#loc=manhattan" role="button">Go to New York &raquo;</a></p>
 			</div>
 		</div>
 		<div class="row place-row">
@@ -86,8 +86,8 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript" src="/static/app.js"></script>
-<script type="text/javascript" src="/static/logic.js"></script>
+<script type="text/javascript" src="static/app.js"></script>
+<script type="text/javascript" src="static/logic.js"></script>
 <script type="text/javascript">
 	var $place = $('#place-to-go');
 
@@ -95,7 +95,7 @@
 		if (e.keyCode === 13 && $place.val().length) {
 			var loc = findLocation($place.val());
 			if (loc) {
-				location = '/watch/#loc=' + $place.val();
+				location = '/ig/watch/#loc=' + $place.val();
 			} else {
 				alert('Sorry, Google can\'t find this location..');
 			}

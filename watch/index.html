@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Instageo Watch &mdash; Antida software</title>
-	<link rel="stylesheet" href="/static/app.css">
+	<link rel="stylesheet" href="../static/app.css">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -54,7 +54,7 @@
 				<div class="modal-body">
 					<p>You can write city or street/showplace in city. We will try to find correct object.</p>
 					<p class="ta-c"><input type="text" id="place-to-go" class="place-to-go modal-fullsize" placeholder="chelyabinsk" onkeyup="placeUpdate(event);"></p>
-					<p>Examples: <a href="#" onclick="return place('tower of pisa');">tower of pisa</a>, <a href="#" onclick="return place('lion');">lion</a>, <a href="#" onclick="return place('stonehenge');">stonehenge</a>, <a href="#" onclick="return place('набережная канала грибоедова');">набережная канала грибоедова</a>, <a href="#" onclick="return place('barcelona');">barcelona</a>, <a href="/watch/#lid=225860573&lat=59.935514813&lng=30.325857256&name=Команда ВКонтакте">команда вконтакте</a>, <a href="#" onclick="return place('facebook');">facebook</a>, <a href="/watch/#lid=417858860&lat=48.858369452&lng=2.294520372&name=Tour Eiffel Top Floor">с вершины эйфелевой башни</a>, etc.</p>
+					<p>Examples: <a href="#" onclick="return place('tower of pisa');">tower of pisa</a>, <a href="#" onclick="return place('lion');">lion</a>, <a href="#" onclick="return place('stonehenge');">stonehenge</a>, <a href="#" onclick="return place('набережная канала грибоедова');">набережная канала грибоедова</a>, <a href="#" onclick="return place('barcelona');">barcelona</a>, <a href="/ig/watch/#lid=225860573&lat=59.935514813&lng=30.325857256&name=Команда ВКонтакте">команда вконтакте</a>, <a href="#" onclick="return place('facebook');">facebook</a>, <a href="/ig/watch/#lid=417858860&lat=48.858369452&lng=2.294520372&name=Tour Eiffel Top Floor">с вершины эйфелевой башни</a>, etc.</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="goTo();">Go</button>
@@ -69,8 +69,8 @@
 		</ul>
 	</div>
 </body>
-<script type="text/javascript" src="/static/app.js"></script>
-<script type="text/javascript" src="/static/logic.js"></script>
+<script type="text/javascript" src="../static/app.js"></script>
+<script type="text/javascript" src="../static/logic.js"></script>
 <script type="text/javascript">
 	window.onload = launchWatcher;
 </script>
